@@ -1,0 +1,71 @@
+ASSIGNMENT_1
+USING SPECIAL OPERATORS.
+------------------------
+
+1. Display all orders placed during the year 2024 whose status is either
+   Delivered or Pending.
+
+2. Display all orders placed by employees except Employee ID 2
+   whose status is not Delivered.
+
+3. Display all menu items that cost between ₹150 and ₹300
+   and belong to Restaurant IDs 1, 5, or 6.
+
+4. Display all menu items that do not cost between ₹150 and ₹300
+   and do not belong to Restaurant IDs 2 and 4.
+
+5. Display all restaurants located in Mumbai, Delhi, or Jaipur
+   whose restaurant names do not match "Royal Thali".
+
+6. Display all restaurants that are not located in Delhi or Rajasthan
+   and whose address is on a road.
+
+7. Display all menu items served by Restaurant IDs 2, 3, or 6
+   except Fish Curry.
+
+8. Display all orders that were not placed during the year 2023
+   and whose status is neither Cancelled nor Pending.
+
+9. Display all restaurants whose city name includes the letter 'A'
+   and are not located in Tamil Nadu.
+
+10. Display all menu items costing from ₹100 to ₹250
+    whose description is not related to potatoes.
+
+11. Display all orders placed between
+    01-Nov-2024 and 31-Dec-2024
+    by Employees 2 or 8
+    whose status is Delivered or Dispatched.
+
+12. Display all menu items except those costing ₹100, ₹150, or ₹350
+    whose item name is Masala Dosa or Dal Baati.
+
+13. Display all restaurants except Restaurant IDs 2 to 5
+    whose city name does not include the letter 'I'.
+
+14. Display all orders placed from October 2023 to December 2024
+    whose status is not Delivered.
+
+15. Display all menu items priced between ₹200 and ₹300
+    whose description is related to spices or traditional food.
+
+16. Display all restaurants whose phone number is available
+    and whose address is on a road
+    except those in Delhi.
+
+17. Display all menu items whose description is available,
+    whose name is either Masala Dosa, Dal Baati, or Ghevar,
+    and whose price is outside the range ₹100 to ₹200.
+
+18. Display all orders whose status is Delivered or Accepted,
+    placed by employees other than Employee ID 8,
+    and not placed during the year 2023.
+
+19. Display all restaurants except those located in Kolkata
+    whose restaurant name includes the letter 'T'
+    and whose state is not Maharashtra.
+
+20. Display all menu items belonging to restaurants other than
+    Restaurant IDs 1 and 5,
+    whose description is not related to fish,
+    and whose price is between ₹120 and ₹350.

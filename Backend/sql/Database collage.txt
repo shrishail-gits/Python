@@ -1,0 +1,298 @@
+============================================================
+              SQL PRACTICE QUESTIONS & ANSWERS
+============================================================
+
+DATABASE: college_db
+TABLE: students
+
+
+1. Display all columns and all records from students table.
+
+ANSWER:
+SELECT *
+FROM students;
+
+
+------------------------------------------------------------
+
+2. Display name, branch, and cgpa of all students.
+
+ANSWER:
+SELECT name, branch, cgpa
+FROM students;
+
+
+------------------------------------------------------------
+
+3. Display all different branches without duplicates.
+
+ANSWER:
+SELECT DISTINCT branch
+FROM students;
+
+
+------------------------------------------------------------
+
+4. Display students whose CGPA is greater than 8.0.
+
+ANSWER:
+SELECT *
+FROM students
+WHERE cgpa > 8.0;
+
+
+------------------------------------------------------------
+
+5. Display name and age of students whose age is greater than
+   or equal to 22.
+
+ANSWER:
+SELECT name, age
+FROM students
+WHERE age >= 22;
+
+
+------------------------------------------------------------
+
+6. Display name, branch, and cgpa of students whose CGPA is
+   less than 8.0.
+
+ANSWER:
+SELECT name, branch, cgpa
+FROM students
+WHERE cgpa < 8.0;
+
+
+------------------------------------------------------------
+
+7. Display name and cgpa of students who belong to ECE branch.
+
+ANSWER:
+SELECT name, cgpa
+FROM students
+WHERE branch = 'ECE';
+
+
+------------------------------------------------------------
+
+8. Display name and email of all female students.
+
+ANSWER:
+SELECT name, email
+FROM students
+WHERE gender = 'Female';
+
+
+------------------------------------------------------------
+
+9. Display name and age of students whose age is between 21
+   and 22.
+
+ANSWER:
+SELECT name, age
+FROM students
+WHERE age BETWEEN 21 AND 22;
+
+
+------------------------------------------------------------
+
+10. Display name and cgpa of students whose CGPA is between
+    8.0 and 9.0.
+
+ANSWER:
+SELECT name, cgpa
+FROM students
+WHERE cgpa BETWEEN 8.0 AND 9.0;
+
+
+------------------------------------------------------------
+
+11. Display name, branch, and cgpa of students who are either
+    in ECE or CSE.
+
+ANSWER:
+SELECT name, branch, cgpa
+FROM students
+WHERE branch = 'ECE'
+OR branch = 'CSE';
+
+OR:
+
+SELECT name, branch, cgpa
+FROM students
+WHERE branch IN ('ECE', 'CSE');
+
+
+------------------------------------------------------------
+
+12. Display name and cgpa of students who are NOT from CSE.
+
+ANSWER:
+SELECT name, cgpa
+FROM students
+WHERE branch NOT IN ('CSE');
+
+OR:
+
+SELECT name, cgpa
+FROM students
+WHERE branch <> 'CSE';
+
+
+------------------------------------------------------------
+
+13. Display name and email of students whose email contains
+    "gmail".
+
+ANSWER:
+SELECT name, email
+FROM students
+WHERE email LIKE '%gmail%';
+
+
+------------------------------------------------------------
+
+14. Display name and email of students whose email ends with
+    "gmail.com".
+
+ANSWER:
+SELECT name, email
+FROM students
+WHERE email LIKE '%gmail.com';
+
+
+------------------------------------------------------------
+
+15. Display name and branch of students whose name starts
+    with 'S'.
+
+ANSWER:
+SELECT name, branch
+FROM students
+WHERE name LIKE 'S%';
+
+
+------------------------------------------------------------
+
+16. Display name and branch of students whose name ends
+    with 'a'.
+
+ANSWER:
+SELECT name, branch
+FROM students
+WHERE name LIKE '%a';
+
+
+------------------------------------------------------------
+
+17. Display name, dob, and email of students whose email
+    contains "gmail.com".
+
+ANSWER:
+SELECT name, dob, email
+FROM students
+WHERE email LIKE '%gmail.com%';
+
+
+------------------------------------------------------------
+
+18. Display name, branch, and cgpa of ECE students whose
+    CGPA is greater than 8.0.
+
+ANSWER:
+SELECT name, branch, cgpa
+FROM students
+WHERE branch = 'ECE'
+AND cgpa > 8.0;
+
+
+------------------------------------------------------------
+
+19. Display name, branch, and cgpa of students who are in ECE
+    OR have CGPA greater than 9.0.
+
+ANSWER:
+SELECT name, branch, cgpa
+FROM students
+WHERE branch = 'ECE'
+OR cgpa > 9.0;
+
+
+------------------------------------------------------------
+
+20. Display name, branch, and cgpa of students who are NOT in
+    ECE AND have CGPA greater than 8.0.
+
+ANSWER:
+SELECT name, branch, cgpa
+FROM students
+WHERE branch NOT IN ('ECE')
+AND cgpa > 8.0;
+
+
+============================================================
+                    IMPORTANT PATTERNS
+============================================================
+
+COMPARISON OPERATORS:
+
+=       Equal to
+>       Greater than
+<       Less than
+>=      Greater than or equal
+<=      Less than or equal
+<>      Not equal
+
+
+LOGICAL OPERATORS:
+
+AND     Both conditions must be true
+OR      Either condition can be true
+NOT     Negates a condition
+
+
+MULTIPLE VALUES:
+
+IN ('ECE', 'CSE')
+    → Matches ECE or CSE
+
+NOT IN ('ECE', 'CSE')
+    → Does not match ECE or CSE
+
+
+RANGE:
+
+BETWEEN 8.0 AND 9.0
+    → Includes both 8.0 and 9.0
+
+
+LIKE:
+
+'S%'
+    → Starts with S
+
+'%a'
+    → Ends with a
+
+'%gmail%'
+    → Contains gmail
+
+'%gmail.com'
+    → Ends with gmail.com
+
+
+============================================================
+                    REMEMBER
+============================================================
+
+SELECT  → Choose columns
+FROM    → Choose table
+WHERE   → Filter rows
+DISTINCT → Remove duplicates
+AND     → Both conditions
+OR      → Either condition
+IN      → Match values from a list
+BETWEEN → Match a range
+LIKE    → Pattern matching
+
+============================================================
